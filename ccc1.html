@@ -1,83 +1,100 @@
+
 <!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
-  <meta name="referrer" content="never">
-<link rel="stylesheet" href="//tcb-spbf4syedianw32-2cc9dff082da-1311682319.tcloudbaseapp.com/index.css">
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
-  <title>am</title>
-<link rel="stylesheet" href="https://g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/skins/default/aliplayer-min.css" />
-	<script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/apsara-media-box/imp-web-player/2.16.3/aliplayer-min.js"></script>
-  <script type="text/javascript" charset="utf-8" src="//tcb-spbf4syedianw32-2cc9dff082da-1311682319.tcloudbaseapp.com/static/js/jquery.min.js"></script>
-  <script>
+<html>
+	<head>
+		<meta name="viewport"
+			content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+		<meta name="referrer" content="no-referrer" />
+		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+		<title>喜欢就和好兄弟分享</title>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		    <video id="video" ref="videoPlayer" 
+     id="videoElement" 
+     controls 
+     autoplay
+     style="width:100%;height:88%;"></video>
+
+		<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js">
+		</script>
+		<script type="text/javascript" charset="utf-8"
+			src="https://player.alicdn.com/aliplayer/presentation/js/aliplayercomponents.min.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				width: 100%;
+				height: 100%;
+				background: #000;
+				padding: 0;
+				margin: 0;
+				overflow-x: hidden;
+				overflow-y: hidden
+			}
+			.container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 200px; /* 容器的高度 */
+}
+
+.center-button {
+  /* 按钮的样式 */
+}
+
+			* {
+				margin: 0;
+				border: 0;
+				padding: 0;
+				text-decoration: none
+			}
+
+			.btn.btn-lg {
+			    position: absolute;
+				padding: 10px 40px;
+			}
+
+			.btn.btn-hero,
+			.btn.btn-hero:hover,
+			.btn.btn-hero:focus {
+				color: #f5f5f5;
+				background-color: #41a0db;
+				border-color: #3498db;
+				outline: none;
+				margin: 20px auto;
+				cursor: pointer;
+				text-align: center
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="adver_box" style="position:fixed;bottom:0;width:100%;z-index:5;left:0;right:0;text-align:center;cursor:pointer;">
+   <a href="https://qm.qq.com/q/sNdAiceAWm" target="_blank"><img src="https://qqq.gtimg.cn/music/photo_new/T053XD000000dOgJh4a4mqC.png" style="width:50%;max-width:500px;">
+    <!-- 浮窗 -->
+   </a>
+  </div>
+			</a>
+		</div>
+
+		</div>
+
+		<script type="text/javascript">var vList = ['https://gitee.com/melonzizi/test1/raw/master/543543_part_01.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_02.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_03.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_04.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_05.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_06.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_07.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_08.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_09.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_10.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_11.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_12.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_13.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_14.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_15.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_16.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_17.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_18.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_19.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_20.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_21.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_22.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_23.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_24.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_25.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_26.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_27.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_28.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_29.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_30.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_31.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_32.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_33.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_34.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_35.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_36.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_37.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_38.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_39.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_40.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_41.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_42.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_43.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_44.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_45.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_46.py', 'https://gitee.com/melonzizi/test1/raw/master/543543_part_47.py', ]; // 初始化播放列表
+		var vLen = vList.length; // 播放列表的长度
+        var curr = 0; // 当前播放的视频
+        var video = document.getElementById('video');
+        video.addEventListener('ended', play, false);
+        play();
+
+        function play(e) {
+            video.src = vList[curr];
+            video.load(); // 如果短的话，可以加载完成之后再播放，监听 canplaythrough 事件即可
+            video.play();
+
+            curr++;
+            if (curr >= vLen) curr = 0; // 播放完了，重新播放
+        }
+		</script>
 
 
-
-//var test = window.location.href;
-//test = test+".json";
-
-
-</script>
-  <style>
-    body,
-    html {
-      width: 100%;
-      height: 100%;
-      background: rgb(0, 0, 0);
-      padding: 0;
-      margin: 0;
-      overflow-x: hidden;
-      overflow-y: hidden
-    }
-    * {
-      margin: 0;
-      border: 0;
-      padding: 0;
-      text-decoration: none
-    }
-    #player-con {
-      position: inherit;
-	  height: 95%;
-	  position:absolute;
-	  top:0;
-    }
-  </style>
-</head>
-<body><script>
-with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=ac11000117045703529711977efa16&asid=AQAAAADxrZllLE3ZEQAAAADXXMJbqn5t3g==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
-</script>
-<script>
-with(document)with(body)with(insertBefore(createElement("script"),firstChild))setAttribute("exparams","category=&userid=&aplus&yunid=&&trid=ac11000117045697007094805e82f4&asid=AQAAAABkq5llGQxpdQAAAACkDPEQQWsprg==",id="tb-beacon-aplus",src=(location>"https"?"//g":"//g")+".alicdn.com/alilog/mlog/aplus_v2.js")
-</script>
-
-<div id='tanchuan'>
-			<div class="tczt">
-				<div class="ewm_tc">
-					<img src="" alt="" class="dqewm" id="qrcode">
-					<!--<div id="qrcode" class="qrcode"></div>-->
-
-
-				</div>
-
-				<div class="baocun">
-
-					<div><span class="tswb">扫码添加微信获取密码</span></div>
-					<!--<button class="bctp">保存</button>-->
-					<div><input class="bctp" type="text" id="mmwb"></div>
-					<button class="gb" onclick="yzmm()">验证密码</button>
-				</div>
-			</div>
-
-</div>
-<div class="prism-player" id="player-con"></div>
-<script src="
-//tcb-spbf4syedianw32-2cc9dff082da-1311682319.tcloudbaseapp.com/static/js/jq4.1.js"></script>
-<script src="//tcb-spbf4syedianw32-2cc9dff082da-1311682319.tcloudbaseapp.com/static/js/e41513eb4583b3060fe80c6f0ea5965e.js"></script>
-<script src="//tcb-spbf4syedianw32-2cc9dff082da-1311682319.tcloudbaseapp.com/static/js/md5.js"></script>
-<div id='dibu'>
-	<button id='tzan' onclick="tz()"></button>
-</div>
-
-</body>
+	</body>
 </html>
